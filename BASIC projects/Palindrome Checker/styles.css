@@ -1,0 +1,133 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    min-height: 100vh; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+    
+    color: #fff; 
+    background-color: blanchedalmond;
+    background: url("https://github.com/FirdavsMatrix/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/Palindrome%20Checker/images/street-789626_1920.jpg?raw=true") no-repeat;
+    background-size: cover; 
+}
+
+.palindrome-checker {
+    width: 90%;
+    max-width: 700px; 
+    padding: 2rem; 
+    border-radius: 10px;
+
+    display: flex; 
+    flex-flow: column nowrap;
+    gap: 1rem; 
+
+    background-color: #000000d2;
+}
+
+.palindrome-checker h1 {
+    color: #e38407;
+    font-size: 3rem; 
+    margin-inline: auto; 
+}
+
+.palindrome-form {
+    background-color: #000;
+    font-size: 1.5rem; 
+    width: 100%;
+    padding: 1rem; 
+    border-radius: 10px;
+
+    display: flex;
+    gap: 1rem; 
+    flex-flow: column nowrap; 
+    
+}
+
+.palindrome-form label {
+    display: block; 
+    margin-bottom: 1rem; 
+}
+
+.palindrome-form input {
+    width: 75%; 
+    font-size: 1.2rem;
+    border-radius: 10px; 
+    padding: .25rem .75rem; 
+    border: 2px solid #e38407; 
+    outline-color: #e38407;
+}
+
+.palindrome-form button {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #e38407; 
+    padding: .25rem .75rem; 
+}
+
+
+.palindrome-form #result {
+    display: block; 
+    width: 100%; 
+    font-weight: bold; 
+
+    color: #e38407;
+}
+
+.palindrome-definition {
+    background-color: #000; 
+    font-size: 1.5rem; 
+    width: 100%;  
+    padding: 1rem; 
+    border-radius: 10px;
+}
+
+.palindrome-definition img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.palindrome-definition p {
+    display: flex; 
+    gap: 0.5rem; 
+}
+
+
+@media (max-width: 750px) {
+    html {
+        font-size: 12px; 
+    }
+
+    .palindrome-checker {
+        max-width: 550px; 
+    }
+
+    .palindrome-checker h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 8px; 
+    }
+
+    .palindrome-checker {
+        max-width: 400px; 
+    }
+}
+
+
+
+
+
+
