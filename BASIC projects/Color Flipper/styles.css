@@ -1,0 +1,96 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  letter-spacing: 0.1rem;
+}
+
+
+nav {
+  height: 60px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo h2 {
+  background-image: 
+  linear-gradient(to right, #C81616, #C55D18, #E0B61F, #40E01F, #1F86E0, #CD1FE0, #E01F2F);
+  background-clip: text; 
+  -webkit-background-clip: text;
+  color: transparent;
+
+  font-size: 3rem;
+  
+}
+
+.container {
+  width: 50%; 
+  place-self: center;
+
+  display: flex; 
+  flex-direction: column;
+  gap: 2rem; 
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2 { 
+  display: inline-block; 
+  padding: 0.5rem 0.75rem; 
+  font-size: 2rem; 
+
+  background-color: #12108D;
+  color: whitesmoke;
+  border: 5px solid whitesmoke; 
+  border-radius: 20px; 
+}
+
+span {
+  color: #a9a8a8;
+  font-weight: bold; 
+}
+
+
+.btn { 
+  display: block; 
+  padding: 0.5rem 0.75rem; 
+  font-size: 1.3rem; 
+  font-weight: bold;
+
+  background-color: #12108D;
+  color: whitesmoke;
+  border: 5px solid whitesmoke; 
+  border-radius: 20px; 
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 850px) {
+  html {
+    font-size: 12px; 
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
