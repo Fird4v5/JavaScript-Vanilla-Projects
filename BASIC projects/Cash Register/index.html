@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cash Register</h1>
+      <div class="register">
+        <!-- Customer Input and Change due part -->
+        <div class="customer-container">
+        <div class="input-container">
+          <input id="cash" class="cash" type="number" value placeholder="Enter your cash">
+          <button class="purchase-btn" id="purchase-btn" type="button">Purchase</button>
+        </div>
+
+        <div id="change-due" class="change-due">
+          
+        </div>
+      </div>
+
+        
+        <div class="register-body">
+          <div class="coint-slot"></div>
+          <div class="screen-btns">
+          <div class="screen" id="screen">Total: $1.87</div>
+          <div class="buttons-container">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn">C</button>
+          </div>
+        </div>
+          <div class="drawer" id="drawer">
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
