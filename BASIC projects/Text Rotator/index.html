@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Rotator</title>
+</head>
+<body>
+    <h1 id="text">Be
+        <span>Bold</span>
+        <span>Brave</span>
+        <span>Strong</span>
+        <span>Charming</span>
+        <span>Smart</span>
+        <span>Confident</span>
+    </h1>
+    <script>
+        const text = document.getElementById("text");
+        const word = document.getElementsByTagName("span");
+        let i = 0;
+
+        function rotator() {
+            word[i].style.display = "none";
+            i = (i + 1) % word.length;
+            word[i].style.display = "initial";
+        };
+
+        setInterval(rotator, 1000);
+    </script>
+</body>
+</html>

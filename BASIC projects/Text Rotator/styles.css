@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+
+h1 {
+    font-size: 3rem; 
+}
+
+h1 span {
+    display: none;
+    color: goldenrod
+}
+
+@media (min-width: 650px) {
+    h1 {
+        font-size: 5rem; 
+    }
+}
