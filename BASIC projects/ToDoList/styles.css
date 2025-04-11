@@ -86,7 +86,7 @@ ul li {
 
 ul li::before {
     content: '';
-    background-image: url(https://github.com/Hellko666/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/To%20Do%20List%20/images/unchecked.png?raw=true);
+    background-image: url(https://github.com/Fird4v5/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/ToDoList/images/unchecked.png?raw=true);
     background-size: cover; 
     width: 25px; 
     height: 25px; 
@@ -101,7 +101,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    background-image: url(https://github.com/Hellko666/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/To%20Do%20List%20/images/checked.png?raw=true);
+    background-image: url(https://github.com/Fird4v5/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/ToDoList/images/checked.png?raw=true);
 }
 
 ul li span {
