@@ -1,0 +1,136 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.converter {
+    width: 100%;
+    max-width: 300px; 
+
+    border: 2px solid #bd8b0d;
+    padding: 1rem;
+    border-radius: 10px; 
+    box-shadow: 2px 2px 2px 2px #bd8b0d; 
+}
+
+
+.converter h1 {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #bd8b0d ;
+    text-align: center; 
+    margin-bottom: 1rem;
+}
+
+
+.input-field form { 
+    display: flex;
+    gap: 0.3rem; 
+    
+}
+
+.input-field form input {
+    width: 50%;
+    font-size: 1rem; 
+    text-align: center;
+    line-height: 1.5rem; 
+    border: 1px solid #bd8b0d;
+    outline-color: #bd8b0d;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+}
+
+.input-field form span {
+    font-weight: bold;
+}
+
+.unit {
+    display: flex;
+    gap: 1.5rem; 
+    justify-content: space-between;
+    font-size: 1rem; 
+    margin-bottom: 0.8rem; 
+}
+
+.unit select {
+    width: 50%;
+    font-size: 0.8rem; 
+    font-weight: bold;
+    text-shadow: 1px 1px #000;  
+    line-height: 2rem;
+    border: 1px solid #bd8b0d;
+    background-color: #bd8b0d;
+    color: #fff;
+    outline-color: #bd8b0d;
+}
+
+
+.btn {
+    display: block;
+    margin-inline: auto;
+    padding: 0.2rem 0.5rem; 
+    font-size: 0.9rem; 
+    font-weight: bold;
+    cursor: pointer;
+    border: 1.5px solid #000;
+    background-color: #bd8b0d;
+    color: #fff;
+    text-shadow: 1px 1px #000;  
+    border-radius: 10px;
+}
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none; 
+}
+
+
+@media (min-width: 500px) {
+    html {
+        font-size: 18px; 
+    }
+
+    .converter {
+        max-width: 350px; 
+    }
+}
+
+@media (min-width: 750px) {
+    html {
+        font-size: 20px; 
+    }
+
+    .converter {
+        max-width: 500px; 
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 22px; 
+    }
+
+    .converter {
+        max-width: 600px; 
+    }
+}
