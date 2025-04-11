@@ -1,0 +1,141 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh; 
+    background: linear-gradient(to bottom, #000500, #362417);
+}
+
+.todo-app {
+    width: 100%; 
+    max-width: 540px; 
+    margin-top: 5rem; 
+    margin-inline: auto;
+    padding: 2rem;  
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.todo-app h2 {
+    display: flex; 
+    align-items: center;
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+}
+
+.todo-app img {
+    width: 50px;
+    height: 45px; 
+}
+
+.input-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #80808043;
+    border-radius: 30px;
+}
+
+.input-container input {
+    background: transparent;
+    border: none; 
+    outline: none; 
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+}
+
+.input-container button {
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.2rem;
+    background-color: #f5812d;
+    color: #fff; 
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+ul {
+    margin-top: 2rem; 
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    font-size: 1.2rem; 
+    padding: 12px 8px 12px 30px; 
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    background-image: url(https://github.com/Hellko666/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/To%20Do%20List%20/images/unchecked.png?raw=true);
+    background-size: cover; 
+    width: 25px; 
+    height: 25px; 
+    position: absolute;
+    left: 0; 
+    top: 10px; 
+}
+
+ul li.checked {
+    color: #555; 
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(https://github.com/Hellko666/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/To%20Do%20List%20/images/checked.png?raw=true);
+}
+
+ul li span {
+    position: absolute;
+    right: 0; 
+    top: 5px; 
+    width: 30px; 
+    height: 30px; 
+    font-size: 1.5rem; 
+    text-align: center;
+    line-height: 30px;
+}
+
+ul li span:hover,
+ul li span:focus {
+    background-color: #80808043;
+    border-radius: 50%; 
+}
+
+
+@media (max-width: 850px) {
+    html {
+        font-size: 12px; 
+    }
+
+    ul li::before {
+        top: 6px; 
+    }
+
+    
+}
+
+@media (max-width: 700px) {
+    .todo-app {
+        max-width: 320px; 
+    }
+}
