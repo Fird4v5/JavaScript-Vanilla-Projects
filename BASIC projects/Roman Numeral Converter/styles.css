@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+}
+
+
+body {
+  font-family: "Gideon Roman", serif;
+  
+}
+
+.container {
+  width: 100%; 
+  min-height: 100vh;
+  padding-inline: 1rem; 
+  background: linear-gradient(#ac670d, #a7861b,  burlywood);
+  
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.rn-converter {
+  background: url("https://github.com/FirdavsMatrix/JavaScript-Vanilla-Projects/blob/main/BASIC%20projects/Roman%20Numeral%20Converter/images/old-paper.jpg?raw=true") no-repeat;
+  background-size: cover;
+
+  max-width: 600px; 
+  padding: 1rem; 
+  border-radius: 10px; 
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.rn-converter img {
+  width: 80px; 
+  height: 80px;
+}
+
+.rn-converter h1 {
+  display: flex; 
+  align-items: center; 
+
+}
+
+hr {
+  width: 100%; 
+  height: 5px; 
+  background-color: black;
+  margin-bottom: 1.5rem;
+}
+
+.rn-converter-form {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rn-converter-form label {
+  font-size: 1.8rem;
+  
+}
+
+.rn-converter-form input,
+.rn-converter-form button {
+  width: 80%; 
+  display: block; 
+  font-size: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px; 
+}
+
+
+.rn-converter-form button { 
+  margin-top: 0.5rem; 
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 1rem; 
+  padding: 1rem; 
+  font-size: 1.8rem; 
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media (max-width: 530px) {
+  html {
+    font-size: 12px; 
+  }
+
+  .rn-converter {
+    max-width: 400px;
+  }
+
+  .rn-converter img {
+    width: 50px; 
+    height: 50px; 
+  }
+}
+
+
+@media (max-width: 400px) {
+  html {
+    font-size: 11px; 
+  }
+
+  .rn-converter img {
+    width: 45px; 
+    height: 45px; 
+  }
+}
+
