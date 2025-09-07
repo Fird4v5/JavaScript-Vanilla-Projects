@@ -15,9 +15,8 @@
 }
 
 .calculator {
-    width: 100%;
     height: auto; 
-    max-width: 700px;
+    width: 700px;
     background-color: #292525;
     color: aliceblue;
     border-radius: 10px; 
