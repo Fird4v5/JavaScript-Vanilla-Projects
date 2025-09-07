@@ -36,3 +36,5 @@ All live demos are available from my portfolio:
 1. Clone the repo:  
    ```bash
    git clone https://github.com/your-username/js-projects.git
+2. Open the project folder you want to run.
+3. Open index.html in your browser (no build step required for these static demos).
