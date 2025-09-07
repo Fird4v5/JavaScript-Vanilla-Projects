@@ -72,6 +72,7 @@
     border-radius: 10px;
     border: 2px solid #e38407; 
     padding: .25rem .75rem; 
+    cursor: pointer; 
 }
 
 
