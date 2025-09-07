@@ -117,7 +117,7 @@ input::-webkit-outer-spin-button {
 
 @media (min-width: 750px) {
     html {
-        font-size: 20px; 
+        font-size: 28px; 
     }
 
     .converter {
@@ -127,7 +127,7 @@ input::-webkit-outer-spin-button {
 
 @media (min-width: 1000px) {
     html {
-        font-size: 22px; 
+        font-size: 30px; 
     }
 
     .converter {
